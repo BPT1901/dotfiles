@@ -1,0 +1,8 @@
+wezterm/.wezterm.sock
+Cache/
+logs/
+temp/
+sketchybar_backup/
+lftp/
+Radarr/
+Sonarr/

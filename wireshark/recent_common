@@ -1,0 +1,112 @@
+# Common recent settings file for Wireshark 4.4.5.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /Users/blt-mediaserver/Desktop/CCNA Course/Wireshark/Basic-Wireshark-Capture1.pcapng
+recent.capture_file: /Users/blt-mediaserver/Desktop/CCNA Course/Wireshark/Basic-Wireshark-Capture2.pcapng
+
+######## Recent capture filters (latest first), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: dns
+recent.display_filter: http2
+recent.display_filter: http
+recent.display_filter: arp
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 2560
+gui.geometry_main_y: 272
+gui.geometry_main_width: 1920
+gui.geometry_main_height: 1027
+
+# Main window maximized.
+# true or false (case-insensitive).
+gui.geometry_main_maximized: true
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb0003000000000a00000001100000117f0000052e00000a000000012c0000117f0000052e0000000102000000078000000a000000012c0000117f0000052e
+
+# Leftalign Action Buttons.
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
+
+# Warn if running with elevated permissions (e.g. as root).
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
+
+# Warn if Wireshark is unable to capture.
+# true or false (case-insensitive).
+sys.warn_if_no_capture: true
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: false
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of ManageInterfacesDialog window.
+# Decimal integers.
+gui.geom.ManageInterfacesDialog.x: 1656
+gui.geom.ManageInterfacesDialog.y: 299
+gui.geom.ManageInterfacesDialog.width: 750
+gui.geom.ManageInterfacesDialog.height: 425
+# true or false (case-insensitive).
+gui.geom.ManageInterfacesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ManageInterfacesDialog.qt_geometry: 01d9d0cb00030000000006780000012b00000965000002ef000006780000014700000965000002ef00000000000000000a00000006780000014700000965000002ef
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 2742
+gui.geom.PacketDialog.y: 335
+gui.geom.PacketDialog.width: 1536
+gui.geom.PacketDialog.height: 821
+# true or false (case-insensitive).
+gui.geom.PacketDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PacketDialog.qt_geometry: 01d9d0cb0003000000000ab60000014f000010b50000049f00000ab60000016b000010b50000049f0000000100000000078000000ab60000016b000010b50000049f
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"
