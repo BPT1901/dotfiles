@@ -115,7 +115,20 @@ source "$ITEM_DIR/front_app.sh"
 # https://felixkratz.github.io/SketchyBar/config/events
 
 sketchybar --add item clock right \
-  --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
+           --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
+
+sketchybar --add item network right \
+            --set network update_freq=2 \
+                      icon.font="Hack Nerd Font:Bold:12.0" \
+                      icon="" \
+                      icon.padding_left=0 \
+                      label.color=0xffffffff \
+                      label.font="Hack Nerd Font:Regular:11.0" \
+                      label.padding_right=40 \
+                      script="/Users/blt-mediaserver/.config/sketchybar/plugins/network.sh" \
+                      click_script="open /System/Library/PreferencePanes/Network.prefPane" \
+            --subscribe network system_wlan_status_change
+  
   #--add item volume right \
   #--set volume script="$PLUGIN_DIR/volume.sh" \
   #--subscribe volume volume_change \
