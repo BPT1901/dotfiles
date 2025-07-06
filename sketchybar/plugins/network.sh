@@ -34,15 +34,8 @@ get_network_stats() {
 # Function to convert bytes to human readable format
 human_readable() {
     local bytes=$1
-    if [[ $bytes -gt 1073741824 ]]; then
-        echo "$(( bytes / 1073741824 ))GB/s"
-    elif [[ $bytes -gt 1048576 ]]; then
-        echo "$(( bytes / 1048576 ))MB/s"
-    elif [[ $bytes -gt 1024 ]]; then
-        echo "$(( bytes / 1024 ))KB/s"
-    else
-        echo "${bytes}B/s"
-    fi
+    local mb_per_sec=$(awk "BEGIN {printf \"%.2f\", $bytes / 1048576}")
+    echo "${mb_per_sec}MB/s"
 }
 
 # Get current stats
