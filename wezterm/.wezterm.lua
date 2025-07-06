@@ -4,16 +4,27 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- config.color_scheme = 'cyberpunk' 
+-- Enhanced terminal capabilities
+config.term = "xterm-256color"  -- Changed from xterm-256color
+config.enable_wayland = false  -- Can help with compatibility issues
 
-config.term = "xterm-256color"
+-- Font configuration
+config.font = wezterm.font("JetBrains Mono")
+config.font_size = 14
 
--- This is where you actually apply your config choices
+-- Enable true color support
+config.front_end = "WebGpu"  -- Better rendering engine
+config.webgpu_power_preference = "HighPerformance"
 
-config.font = wezterm.font("MesloLGS Nerd Font Mono")
-config.font_size =16
+config.window_background_opacity = .8
+config.macos_window_background_blur = 10
 
+-- Tab bar configuration
 config.enable_tab_bar = true
+config.use_fancy_tab_bar = true
+config.tab_bar_at_bottom = false
+config.hide_tab_bar_if_only_one_tab = false
+
 -- The filled in variant of the < symbol
 local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
 
@@ -49,11 +60,12 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
   end
 end)
 
+-- Window configuration
 config.window_decorations = "RESIZE"
-
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 10
 
+-- Color scheme
 config.colors = {
   foreground = "#F8F8F2",
   background = "#0D0221",
@@ -84,21 +96,12 @@ config.colors = {
   },
 }
 
---[[
-config.colors = {
-	foreground = "#CBE0F0",
-	background = "#011423",
-	cursor_bg = "#CA24B1",
-	cursor_border = "#CA24B1",
-	cursor_fg = "#011423",
-	selection_bg = "#033259",
-	selection_fg = "#CBE0F0",
-	ansi = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#0FC5ED", "#a277ff", "#F724C6", "#A21B82" },
-	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
+-- Environment variables to enhance color support
+config.set_environment_variables = {
+  TERM = 'wezterm',
+  COLORTERM = 'truecolor',
+  TERM_PROGRAM = 'WezTerm',
 }
-]]
-
---#24EAF7
 
 -- and finally, return the configuration to wezterm
 return config
