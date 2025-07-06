@@ -57,10 +57,10 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
       drawing=on \
       background.padding_left=8 \
       background.padding_right=8 \
-      background.color=0x44ffffff \
-      background.corner_radius=5 \
+      background.color=0xAAb8124c \
+      background.corner_radius=35 \
       background.drawing=on \
-      background.border_color=0xAAFFFFFF \
+      background.border_color=0xAAe6d1d8 \
       background.border_width=0 \
       background.height=20 \
       icon="$sid" \
